@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "925627750281",
+    "firebase_url": "https://lab5carsoct26-default-rtdb.firebaseio.com",
+    "project_id": "lab5carsoct26",
+    "storage_bucket": "lab5carsoct26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:925627750281:android:845eb918d289a4bb7bb358",
+        "android_client_info": {
+          "package_name": "com.midterm.lab5_firebase_car"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "925627750281-vgcrede3nkdj7ov7b6f9gbg0gb2c2443.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXt8VYvl59rbyYTfbTAwwYhZIR0x_1qKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "925627750281-vgcrede3nkdj7ov7b6f9gbg0gb2c2443.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
