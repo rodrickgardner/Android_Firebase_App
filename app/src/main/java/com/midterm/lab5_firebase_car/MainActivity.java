@@ -23,7 +23,8 @@ import com.google.firebase.database.ValueEventListener;
 import com.midterm.lab5_firebase_car.model.Car;
 
 import java.util.ArrayList;
-import java.util.List;
+//import java.util.List;
+//import java.util.iterator;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, ValueEventListener, ChildEventListener {
 
@@ -35,14 +36,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     ArrayList<Car> listOfCars;
 
-    DatabaseReference carDatabase, carChild;
+    private DatabaseReference carDatabase, carChild; //private added
 
-    String brand, status;
+    private String brand, status; //private added
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+/***************** BEGIN FIREBASE DB CODE **************************/
+        //For data persistence
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        carDatabase=FirebaseDatabase.getInstance().getReference("car");
+        Car car = new Car();
+        //car=carDatabase.push().getKey();
+
+/***************** END FIREBASE DB CODE **************************/
         initialize();
     }
 
